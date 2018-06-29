@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 	}
 	
 	func makeHeadline(from string: String) -> String {
-		return ""
+		return "This Is A Test Headline"
 	}
 
 
