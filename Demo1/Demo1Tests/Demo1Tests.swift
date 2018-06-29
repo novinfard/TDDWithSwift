@@ -43,9 +43,17 @@ class Demo1Tests: XCTestCase {
 		XCTAssertEqual(numberOfVowels, 3, "should find 3 vowels in Dominik")
 		
 //		XCTAssertEqual(numberOfVowels, 4, "should find 4 vowels in Dominik", file:"Demo1Tests.swift", line: 36)
-
 		
+	}
+	
+	func test_MakeHeadline_ReturnsStringWithEachWordStartWithCapital() {
+		let viewController = ViewController()
 		
+		let string = "this is a test headline"
+		
+		let headline = viewController.makeHeadline(from: string)
+		
+		XCTAssertEqual(headline, "This Is A Test Headline")
 	}
     
 }
