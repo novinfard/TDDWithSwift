@@ -46,19 +46,21 @@ class Demo1Tests: XCTestCase {
 	}
 	
 	func test_MakeHeadline_ReturnsStringWithEachWordStartWithCapital() {
-		let string = "this is a test headline"
+		let input = "this is a test headline"
+		let expecedOutput = "This Is A Test Headline"
 		
-		let headline = viewController.makeHeadline(from: string)
+		let headline = viewController.makeHeadline(from: input)
 		
-		XCTAssertEqual(headline, "This Is A Test Headline")
+		XCTAssertEqual(headline, expecedOutput)
 	}
 	
 	func test_MakeHeadline_ReturnsStringWithEachWordStartWithCapital2() {
-		let string = "this is another example"
+		let input = "this is another example"
+		let expectedOutput = "This Is Another Example"
 		
-		let headline = viewController.makeHeadline(from: string)
+		let headline = viewController.makeHeadline(from: input)
 		
-		XCTAssertEqual(headline, "This Is Another Example")
+		XCTAssertEqual(headline, expectedOutput)
 	}
     
 }
